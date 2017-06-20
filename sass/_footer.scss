@@ -1,0 +1,36 @@
+// footer
+footer {
+
+  width: 100%;
+  color: #fff;
+  background-color: #232d37;
+  padding: 25px 15px 10px;
+  text-align: center;
+  float: right;
+  // position: absolute;
+  // bottom: 0;
+
+  p {
+    color: #465769;
+    font-size: 12px;
+    line-height: 1.4;
+
+    a { color: inherit; }
+  }
+
+  p:first-child {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 25px;
+  }
+
+  .footer__social-icons {
+    a:nth-child(2) {
+      margin: 0 30px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    padding-bottom: 60px;
+  }
+}

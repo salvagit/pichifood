@@ -1,0 +1,322 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'MuseoSans100';
+  src: url("../font/museosans-100-webfont.eot");
+  src: url("../font/museosans-100-webfont.eot?iefix") format("eot"), url("../font/museosans-100-webfont.woff2") format("woff2"), url("../font/museosans-100-webfont.woff") format("woff"), url("../font/museosans-100-webfont.ttf") format("truetype"), url("../font/museosans-100-webfont.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MuseoSans500';
+  src: url("../font/museosans-500-webfont.eot");
+  src: url("../font/museosans-500-webfont.eot?iefix") format("eot"), url("../font/museosans-500-webfont.woff2") format("woff2"), url("../font/museosans-500-webfont.woff") format("woff"), url("../font/museosans-500-webfont.ttf") format("truetype"), url("../font/museosans-500-webfont.svg#webfont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html, body {
+  font-family: MuseoSans100, Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* to avoid scrollbars */
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  width: 100%; }
+
+.container {
+  background-color: #fff;
+  display: flex;
+  /* use the flex model */
+  min-height: 100%;
+  flex-direction: column;
+  /* learn more: http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */ }
+
+.header {
+  background-color: #eaebed;
+  padding: 13px 0 9px 0;
+  position: relative;
+  text-align: center; }
+  .header h1 {
+    color: #418fcd; }
+    .header h1 img {
+      display: inline-block;
+      width: 200px; }
+
+main.content .content-show {
+  margin-top: 20%; }
+
+.title-container {
+  color: black;
+  text-align: center; }
+
+.content {
+  flex: 1; }
+
+.content {
+  background: no-repeat center center;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+main.content {
+  height: 100%; }
+
+p {
+  margin: 0; }
+
+.enter-addr {
+  margin-top: 15%; }
+
+.content-list {
+  width: 100%;
+  height: 300px;
+  padding: 10px; }
+
+.content-list .list-item-event .title,
+.content-list .list-item-event .description {
+  color: #6b9ac0; }
+
+.content-list h4,
+.content-list p,
+.content-list button {
+  display: inline-block; }
+
+.content-list button {
+  width: 70px;
+  height: 50px;
+  margin-top: -5px;
+  float: right;
+  background-color: transparent;
+  border: 0.3px solid #6b9ac0;
+  border-radius: 5px; }
+
+body > main > div > article > section.checkout {
+  width: 40%;
+  height: 500px;
+  float: right;
+  border: blue;
+  border-radius: 5px; }
+
+@media (min-width: 900px) {
+  .content-list {
+    width: 60%; } }
+.content-search {
+  padding: 15px; }
+
+.search-event-input {
+  background: url("../img/search-icon.png") no-repeat scroll 0 center transparent;
+  background-size: 27px auto;
+  border: 0;
+  color: #a6adae;
+  font-family: MuseoSans100, Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  display: block;
+  outline: 0;
+  padding-left: 42px;
+  width: 100%; }
+  .search-event-input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: inherit;
+    opacity: 1; }
+  .search-event-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: inherit;
+    opacity: 1; }
+  .search-event-input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: inherit;
+    opacity: 1; }
+  .search-event-input:-moz-placeholder {
+    /* Firefox 18- */
+    color: inherit;
+    opacity: 1; }
+
+.event-preview {
+  display: block;
+  overflow: hidden;
+  position: relative; }
+
+.event-preview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100% !important; }
+
+.event-preview-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+  .event-preview-caption h1, .event-preview-caption h2 {
+    color: #fff;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .event-preview-caption h1 {
+    font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+    font-size: 34px; }
+  .event-preview-caption h2 {
+    font-size: 16px; }
+
+.content-banner {
+  position: relative;
+  height: 200px;
+  overflow-y: hidden; }
+
+.content-banner-title {
+  color: #000;
+  font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 1; }
+
+.content-banner-image {
+  display: block;
+  height: auto;
+  top: 0;
+  max-width: 100%;
+  position: relative;
+  z-index: -1; }
+
+.content-list .list-item {
+  border-bottom: 1px solid #c4cccf;
+  color: #232d38;
+  display: block;
+  font-size: 16px;
+  padding: 30px 15px;
+  position: relative;
+  text-decoration: none; }
+  .content-list .list-item:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent #438ecd;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%); }
+
+.content-list .list-item-event {
+  border-bottom: 1px solid #c4cccf;
+  color: #232d38;
+  display: block;
+  padding: 25px 0;
+  text-decoration: none; }
+
+.event-item {
+  line-height: 1.4; }
+  @media screen and (min-width: 414px) {
+    .event-item {
+      width: 100%; } }
+  .event-item td {
+    padding: 0 15px;
+    vertical-align: middle; }
+  .event-item .event-time {
+    font-size: 12px;
+    text-align: center; }
+  .event-item .event-desc {
+    line-height: 1.2;
+    padding-left: 0; }
+    .event-item .event-desc h2, .event-item .event-desc p {
+      max-width: 202px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .event-item .event-desc h2 {
+      font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+      font-size: 16px; }
+    .event-item .event-desc p {
+      font-size: 14px; }
+  .event-item .event-price {
+    display: none;
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 0;
+    text-align: right; }
+    @media screen and (min-width: 414px) {
+      .event-item .event-price {
+        display: table-cell; } }
+    .event-item .event-price span {
+      display: block;
+      font-family: MuseoSans500, Verdana, Geneva, sans-serif;
+      font-size: 16px; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #232d37;
+  padding: 25px 15px 10px;
+  text-align: center; }
+  .footer p {
+    color: #465769;
+    font-size: 12px;
+    line-height: 1.4; }
+    .footer p a {
+      color: inherit; }
+  .footer p:first-child {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 25px; }
+
+/*# sourceMappingURL=style.css.map */

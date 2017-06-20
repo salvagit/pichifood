@@ -1,0 +1,46 @@
+{
+  "name": "pichifood 2017",
+  "short_name": "pichifood",
+  "description": "Alimento para mascotas",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "red",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "theme_color": "aliceblue",
+  "default_locale": "es",
+  "orientation": "portrait-primary",
+  "lang": "es-AR",
+  "related_applications": [{
+    "platform": "web"
+  }],
+  "chrome_ui_overrides" : {
+    "bookmarks_ui": {
+      "remove_button": "true",
+      "remove_bookmark_shortcut": "true"
+    }
+  },
+  "chrome_url_overrides" : {
+    "pageToOverride": "index.html"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "http://www.pichifood.com",
+    "search_provider": {
+      "name": "pichifood",
+      "keyword": "alimento para perros",
+      "search_url": "http://www.pichifood.com",
+      "favicon_url": "./favicon.ico",
+      "suggest_url": "http://www.pichifood.com",
+      "instant_url": "http://www.pichifood.com",
+      "image_url": "http://www.pichifood.com/images/image1.jpg",
+      "search_url_post_params": "search_lang=http://www.pichifood.com",
+      "suggest_url_post_params": "suggest_lang=http://www.pichifood.com",
+      "instant_url_post_params": "instant_lang=http://www.pichifood.com",
+      "image_url_post_params": "image_lang=http://www.pichifood.com",
+      "encoding": "UTF-8",
+      "is_default": true
+    },
+    "startup_pages": ["http://www.pichifood.com"]
+  }
+}

@@ -1,0 +1,293 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pichifood.com - alimento para mascotas</title>
+        <meta name="description" content="alimento para mascotas">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <main class="content">
+
+          <nav class="header">
+            <a href="/">
+              <h1 class="content-banner-title">pichifood.com</h1>
+            </a>
+          </nav>
+
+          <header class="content-banner">
+            <div class="cover"></div>
+          </header>
+
+          <section class="content-show">
+
+            <div class="products-list">
+              <div id="foodItemsFilter" class="">
+
+                <div class="row filters-container">
+
+                  <div class="col-xs-6 col-md-6">
+                    <div class="dropdown filter-button">
+                      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Filtros
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="filterBrand"></ul>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6 col-md-6 order">
+                    <button type="button" class="btn btn-default price-sort price-up" style="border-radius:50%">
+                      <span class="caret"></span>
+                    </button>
+                    <button type="button" class="btn btn-default price-sort price-down" style="border-radius:50%">
+                      <span class="caret" style="transform: rotate(180deg)"></span>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div id="activeFilters" class="col-xs-12 col-md-6"></div>
+
+              </div>
+
+              <article class="content-list">cargando ..</article>
+
+            </div>
+
+            <aside class="checkout-container">
+              <div class="checkout">
+                <h3>pichi cart</h3>
+                <hr>
+                <p class="address">monroe 1234</p>
+
+                <hr>
+
+                <div id="productsContainer"></div>
+
+                <span class="row">
+                  <h4>Subtotal:</h4>
+                  <p class="total-cart">$0</p>
+                </span>
+
+                <span class="row">
+                  <h4>Impuesto:</h4>
+                  <p class="cost-tax">$0</p>
+                </span>
+
+                <span class="row">
+                  <h4>Entrega:</h4>
+                  <p class="cost-entrega">$0</p>
+                </span>
+
+                <span class="row">
+                  <h4>Total:</h4>
+                  <p class="total-cart">$0</p>
+                </span>
+
+                <button type="button" class="btn btn-danger btn-compra">
+                  CONTINUAR COMPRA
+                </button>
+
+              </div>
+            </aside>
+
+          </section>
+
+          <footer class="footer">
+            <div class="footer__resource">
+              <h4>Pichi on Social</h4>
+              <div class="footer__social-icons">
+                <a href="https://www.facebook.com/Pichifood-1624208644554515" title="Like Pichi on Facebook!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="35" viewbox="0 0 20 35"><g style="fill:none;stroke-linejoin:round"><g stroke="#FFF"><path d="M19.4 11L13.5 11 13.5 8.4C13.5 7.1 14.4 6.8 15 6.8L18.5 6.8 18.5 0.9 12.6 0.9C6.9 0.9 6 5.3 6 8.1L6 11 1 11 1 16.1 6 16.1 6 34 13.5 34 13.5 16.1 18.7 16.1 19.4 11 19.4 11Z"></path></g></g></svg>
+                </a>
+                <a href="https://twitter.com/PichiFood" title="Follow Pichi on Twitter!">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="29" viewbox="0 0 34 29" class="social-icons__center-icon"><g style="fill:none;stroke-linejoin:round"><g stroke="#FFF"><path d="M33.4 2.2C33.4 2.2 29.9 2.6 28.4 2.9 27.1 1.6 25.4 0.7 23.4 0.7 19.6 0.7 16.6 3.8 16.6 7.7 16.6 8.2 16.6 8.8 16.8 9.3 11.1 9 6.1 6.2 2.7 2 2.1 3 1.8 4.2 1.8 5.5 1.8 7.9 3 10 4.8 11.3 3.7 11.3 2.6 10.9 1.7 10.4L1.7 10.5C1.7 13.9 4.1 16.7 7.2 17.3 6.2 17.6 5.1 17.7 4.1 17.5 5 20.2 7.5 22.2 10.5 22.3 7.6 24.6 3.9 25.6 0.4 25.2 3.4 27.2 7 28.3 10.8 28.3 23.4 28.3 30.2 17.7 30.2 8.5 30.2 8.2 30.2 7.9 30.2 7.6 31.6 6.6 32.5 3.6 33.4 2.2L33.4 2.2Z"></path></g></g></svg>
+                </a>
+                <a href="https://www.instagram.com/" title="Follow Pichi on Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewbox="0 0 31 31"><g fill="none"><g transform="translate(-573 -229)translate(587.835649 244.164351)rotate(-1)"><path d="M10.9-7.5C10.9-6.5 10-5.7 9.1-5.7 8.1-5.7 7.3-6.5 7.3-7.5 7.3-8.4 8.1-9.3 9.1-9.3 10-9.3 10.9-8.4 10.9-7.5" fill="#FFF"></path><path d="M6.7 0.3C6.7 3.9 3.9 6.7 0.3 6.7 -3.2 6.7-6.1 3.9-6.1 0.3 -6.1-3.2-3.2-6.1 0.3-6.1 3.9-6.1 6.7-3.2 6.7 0.3L6.7 0.3Z" style="stroke-linejoin:round;stroke:#FFF"></path><path d="M14.6 6.9C14.6 11.1 11.1 14.6 6.9 14.6L-6.2 14.6C-10.5 14.6-13.9 11.1-13.9 6.9L-13.9-6.2C-13.9-10.5-10.5-13.9-6.2-13.9L6.9-13.9C11.1-13.9 14.6-10.5 14.6-6.2L14.6 6.9 14.6 6.9Z" stroke="#FFF"></path></g></g></svg>
+                </a>
+              </div>
+            </div>
+            <hr>
+            <p>2017 Pichifood. Todos los derechos reservados.</p>
+            <!--p>El uso del sitio implica la aceptación de los <a href="#">términos y condiciones</a> y de las <a href="#">políticas de privacidad</a>.</p-->
+          </footer>
+
+          <div class="menu-footer__cart-meta">
+            <div class="menu-footer__open-cart">
+              <button class="cart-btn pichi-button" onclick="Main.doCheckoutMobile()"></button>
+            </div>
+            <div class="menu-footer__cart-total">
+              <span class="total-cart">$0</span>
+            </div>
+            <button class="pichi-button red btn-compra">
+              CHECK OUT
+            </button>
+          </div>
+
+        </main>
+
+        <script id="cartItem" type="text/template">
+          <div class="prod-container">
+            <span class="glyphicon glyphicon-remove right" onclick="Main.removeCartItem(this)" aria-hidden="true"></span>
+            <span class="row">
+              <select class="cart-prod-cant left" onchange="Main.updateCounts(this)"></select>
+              <h4 class="cart-prod-title"></h4>
+            </span>
+            <span class="row">
+              <p class="prod-desc">precio:</p>
+              <p class="cart-prod-price">$123</p>
+            </span>
+          </div>
+        </script>
+
+        <script id="foodItem" type="text/template">
+          <a href="#" class="list-item-event">
+            <img width="100" src="https://www.petinsurance.com//images/dog-bone.png" />
+            <h4 class="title"></h4>
+            <button class="pichi-button description">$price</button>
+          </a>
+        </script>
+
+        <script id="pichiModal" type="text/template">
+          <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content center" style="max-width:400px;">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="gridSystemModalLabel">Title</h4>
+                </div>
+                <div class="modal-body">
+
+                  <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                      notas:
+                      <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <button class="btn btn-default left round" onclick="Main.updatePrice(this, false)">-</button>
+                      <div class="col-xs-4">
+                        <input id="cantidad" type="text" class="form-control" value="1" disabled="disabled" />
+                      </div>
+                      <button class="btn btn-default round" onclick="Main.updatePrice(this, true)">+</button>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-sm-2 right">
+                      <h4 class="price">$0</h4>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="modal-footer">
+                  <button type="button" class="addToCart btn btn-danger w100">AGREGAR AL CARRITO</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        </script>
+
+        <style>
+        .pac-container.pac-logo{z-index: 99999999!important;}
+        input:required:invalid, input:focus:invalid {
+          /* insert your own styles for invalid form input */
+          -moz-box-shadow: none;
+        }
+        </style>
+        <script id="pichickoutModal" type="text/template">
+          <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+
+            <div class="modal-dialog" role="document">
+              <div class="modal-content center" style="max-width:400px;">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="gridSystemModalLabel">Picheckout</h4>
+                </div>
+                <form id="pichickout" action="" method="post">
+
+                  <div class="modal-body">
+                      <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" value="" aria-describedby="name-format" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input v="email" class="form-control" id="email" name="email" placeholder="Email" aria-describedby="name-format" required value="">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Telefono</label>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono" aria-describedby="name-format" required value="">
+                      </div>
+                      <div class="form-group">
+                        <label for="address">Direccion</label>
+                        <input type="text" class="form-control autocomplete" id="addrModalCheckout" name="address" placeholder="Direccion" aria-describedby="name-format" required value="">
+                      </div>
+                      <div class="form-group">
+                        <label for="comments">Comentarios</label>
+                        <textarea id="comments" name="comments" class="form-control" rows="3"></textarea>
+                      </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <input id="buyFood" type="submit" class="addToCart btn btn-danger w100" value="COMPRAR" />
+                  </div>
+
+                </form>
+
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+
+          </div><!-- /.modal -->
+        </script>
+
+        <!-- Latest compiled and minified CSS -->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.2/fetch.js"></script>
+        <script src="js/alimentos-por-zona.js"></script>
+        <script src="js/globals.js"></script>
+
+        <script id="gmScript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwB28ont1wap3OIQeJnJF56LUFLr6zb8g&libraries=places"
+        async defer></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-90743612-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>

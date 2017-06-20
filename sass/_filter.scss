@@ -1,0 +1,84 @@
+// body > main > section > div > div
+
+#foodItemsFilter {
+  padding-top: 15px;
+  width: 100%;
+  .row {margin:0;}
+  .filters-container {
+
+    div {
+      padding-left: 5px;
+      .filter-button {
+        padding-left: 0;
+        button, ul {
+          border-color: $soft-blue;
+          color: $soft-blue;
+        }
+        ul > li {
+          color:$soft-blue;
+          a{color:$soft-blue;}
+        }
+        button {
+          height: 40px;
+        }
+      }
+    }
+
+    .order {
+      color: $soft-blue;
+      margin: 0;
+      text-align: right;
+      padding-right: 20px;
+
+      button {
+        border-color: $soft-blue;
+        width: 40px;
+        height: 40px;
+        span {
+          color: $soft-blue;
+        }
+      }
+
+      small {
+        display: inline-block;
+        vertical-align: text-top;
+        margin-right: 3px;
+      }
+
+      @media screen and (max-width: 900px) {
+        padding-right: 5px;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      width: 62%;
+    }
+  }
+
+  #activeFilters {
+    padding-left: 5px;
+    .chip {
+      width: auto;
+      padding: 5px;
+      margin: 5px 5px 0 0;
+      text-align: center;
+      border-radius: 15px;
+      float: left;
+      .close {
+        font-size: 40px;
+        width: 40px;
+        margin-left: -7px;
+        margin-top: -8px;
+      }
+      .name {
+        margin: 6px 4px 0 2px;
+        font-size: 20px;
+        color: #cccccc;
+      }
+    }
+  }
+  @media screen and (min-width: 900px) {
+    // width: 60%;
+  }
+
+}

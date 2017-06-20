@@ -1,0 +1,56 @@
+{
+	"providers": [{
+		"id": "1",
+		"name": "tito",
+		"address": "Monroe 1760, Buenos Aires, Ciudad Autónoma de Buenos Aires, Argentina",
+		"delivery-time": "5hs",
+		"products": [{
+			"_id": "1",
+			"description": "eucanuba 1",
+			"price": "123"
+		}, {
+			"_id": "2",
+			"description": "eucanuba 2",
+			"price": "200"
+		}, {
+			"_id": "3",
+			"description": "eucanuba 3",
+			"price": "300"
+		}]
+	}, {
+		"id": "2",
+		"name": "polytech",
+		"address": "Av. Cabildo 1760, Buenos Aires, Ciudad Autónoma de Buenos Aires, Argentina",
+		"delivery-time": "5hs",
+		"products": [{
+			"_id": "1",
+			"description": "eucanuba 1",
+			"price": "123"
+		}, {
+			"_id": "2",
+			"description": "eucanuba 2",
+			"price": "200"
+		}, {
+			"_id": "3",
+			"description": "eucanuba 3",
+			"price": "300"
+		}]
+	}, {
+		"id": "3",
+		"address": "Avenida del Libertador 1760, Buenos Aires, Ciudad Autónoma de Buenos Aires, Argentina",
+		"delivery-time": "5hs",
+		"products": [{
+			"_id": "1",
+			"description": "eucanuba 1",
+			"price": "223"
+		}, {
+			"_id": "2",
+			"description": "eucanuba 2",
+			"price": "300"
+		}, {
+			"_id": "3",
+			"description": "eucanuba 3",
+			"price": "400"
+		}]
+	}]
+}
