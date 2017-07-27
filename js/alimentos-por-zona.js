@@ -339,6 +339,8 @@ var Main = {
     el.getElementsByTagName('a')[0].dataset.prod_id = prod._id;
     el.getElementsByTagName('a')[0].addEventListener('click', this.clickFoodItem);
 
+    if(prod.image) el.getElementsByTagName('img')[0].src = prod.image;
+
     el.querySelector('.title').innerHTML = prod.brand + ' ' + prod.line + ' ' + prod.size + 'kg';
     el.querySelector('.description').innerHTML = '$' + prod.price;
 
