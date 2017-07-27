@@ -969,7 +969,8 @@ main.content {
     display: inline-block;
     vertical-align: middle; }
   .content-list .list-item-event .title {
-    width: 42%; }
+    width: 42%;
+    margin-left: 10px; }
 
 .footer__social-icons {
   border-top: 1px solid #9ea1a7;
