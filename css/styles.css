@@ -783,7 +783,7 @@ footer {
   width: auto;
   min-width: 70px;
   height: 50px;
-  float: right;
+  margin-left: auto;
   background-color: transparent;
   border: 0.3px solid #6b9ac0;
   border-radius: 5px;
@@ -961,14 +961,16 @@ main.content {
 .content-list .list-item-event {
   border-bottom: 1px solid #c4cccf;
   color: #232d38;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 25px 0;
   text-decoration: none; }
   .content-list .list-item-event img, .content-list .list-item-event .title, .content-list .list-item-event .pichi-button {
     display: inline-block;
     vertical-align: middle; }
   .content-list .list-item-event .title {
-    width: 42%; }
+    width: 42%;
+    margin-left: 10px; }
 
 .footer__social-icons {
   border-top: 1px solid #9ea1a7;
