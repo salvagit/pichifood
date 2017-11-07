@@ -344,6 +344,8 @@ var Main = {
     el.querySelector('.title').innerHTML = prod.brand + ' ' + prod.line + ' ' + prod.size + 'kg';
     el.querySelector('.description').innerHTML = '$' + prod.price;
 
+    el.querySelector('img').src = prod.image || "https://www.petinsurance.com/images/dog-bone.png";
+
     document.getElementsByClassName('content-list')[0].appendChild(el.getElementsByTagName('a')[0]);
   },
 
