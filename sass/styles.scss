@@ -73,11 +73,12 @@ main.content {
     }
   }
   header.content-show {
-    width: 100%;
+    width: 60%;
+    display: inline-block;
     height: calc(100vh - 42px);
 
     background: url('../images/image5.jpg') no-repeat center;
-    background-size: 70vmax;
+    background-size: 60vmax;
 
     background-position: bottom;
 
@@ -152,12 +153,15 @@ main.content {
             border-radius:.25em;
             background:transparent;
           }
-
+          
           .input-group {
-            width: 80%;
+            width: 98%;
             max-width: 585px;
             margin: 0 auto;
             text-align: center;
+            .addrHome {
+              height: 70px;
+            }
           }
         }
       }
@@ -167,7 +171,7 @@ main.content {
   .checkout-container {
     .checkout {
       display: none;
-      background-color: $soft-gray;
+      // background-color: $soft-gray;
       .row {
         margin: 0;
         h4,
@@ -229,16 +233,23 @@ main.content {
       }
     }
   }
+  .content-show{
+    .products-list{
+      width: 60%;
+      display: inline-block;
+    }
+  }
 }
-
+/*
 .content-banner {
   // box-shadow: inset 0 -50px 50px 0 rgba(0, 0, 0, .25);
   width: 100%;
-  height: 200px;
+  height: 100px;
   position: relative;
   overflow-y: hidden;
-  background: url('../images/image5.jpg') no-repeat;
-  background-size: cover;
+  //background: url('../images/image5.jpg') no-repeat;
+  //background-size: cover;
+  background-color: #d9534f;
   @media screen and (min-width: 415px) {
     .cover{
       width: 100%;
@@ -250,6 +261,16 @@ main.content {
   }
 }
 
+.content-banner-image {
+  display: block;
+  height: auto;
+  top: 0;
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+}
+*/
+
 .content-banner-title {
   margin: 0;
   color: #000;
@@ -258,15 +279,6 @@ main.content {
   left: 15px;
   bottom: 15px;
   z-index: 1;
-}
-
-.content-banner-image {
-  display: block;
-  height: auto;
-  top: 0;
-  max-width: 100%;
-  position: relative;
-  z-index: -1;
 }
 
 .content-list {
@@ -299,11 +311,12 @@ main.content {
     color: #232d38;
     display: flex;
     align-items: center;
-    padding: 25px 0;
+    padding: 10px 0;
     text-decoration: none;
     img, .title, .pichi-button {
       display: inline-block;
       vertical-align: middle;
+      width: 50px;
     }
     .title {
       width: 42%;

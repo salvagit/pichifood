@@ -128,12 +128,22 @@ table {
   border-spacing: 0; }
 
 .header {
-  background-color: #eaebed;
+  background-color: #666;
   padding: 13px 0 9px 0;
   position: relative;
   text-align: center; }
+  .header #getModalVete {
+    color: #2e2e2e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px; }
+    .header #getModalVete:hover {
+      color: #F09F2E;
+      outline: none;
+      text-decoration: none; }
   .header h1 {
-    color: #418fcd; }
+    color: #fff; }
     .header h1 img {
       display: inline-block;
       width: 200px; }
@@ -717,7 +727,7 @@ footer {
         padding-right: 5px; } }
   @media screen and (min-width: 900px) {
     #foodItemsFilter .filters-container {
-      width: 62%; } }
+      width: 100%; } }
   #foodItemsFilter #activeFilters {
     padding-left: 5px; }
     #foodItemsFilter #activeFilters .chip {
@@ -746,7 +756,7 @@ footer {
   main.content .content-show {
     padding: 0 10%; }
     main.content .content-show .content-list {
-      width: 60%; }
+      width: 100%; }
     main.content .content-show .checkout-container {
       width: 35%;
       height: auto;
@@ -754,8 +764,8 @@ footer {
       main.content .content-show .checkout-container .checkout {
         display: block;
         max-width: 400px;
-        padding: 20px;
-        margin: 20px auto;
+        padding: 0 20px;
+        margin: 0 auto;
         border-radius: 5px; } }
 .title-container {
   color: black;
@@ -802,10 +812,11 @@ main.content {
     font-family: MuseoSans500, Verdana, Geneva, sans-serif;
     color: #343e44; }
   main.content header.content-show {
-    width: 100%;
+    width: 60%;
+    display: inline-block;
     height: calc(100vh - 42px);
     background: url("../images/image5.jpg") no-repeat center;
-    background-size: 70vmax;
+    background-size: 60vmax;
     background-position: bottom;
     top: 0;
     margin: 0;
@@ -861,13 +872,14 @@ main.content {
             border: 2px solid rgba(255, 255, 255, 0.5);
             box-shadow: none; }
         main.content header.content-show .header-container #searchForm .form-group .input-group {
-          width: 80%;
+          width: 98%;
           max-width: 585px;
           margin: 0 auto;
           text-align: center; }
+          main.content header.content-show .header-container #searchForm .form-group .input-group .addrHome {
+            height: 70px; }
   main.content .checkout-container .checkout {
-    display: none;
-    background-color: #f7f8f9; }
+    display: none; }
     main.content .checkout-container .checkout .row {
       margin: 0; }
       main.content .checkout-container .checkout .row h4,
@@ -905,23 +917,40 @@ main.content {
     main.content.checkout-mobile .menu-footer__cart-meta {
       bottom: auto;
       top: 0; } }
+  main.content .content-show .products-list {
+    width: 60%;
+    display: inline-block; }
 
+/*
 .content-banner {
+  // box-shadow: inset 0 -50px 50px 0 rgba(0, 0, 0, .25);
   width: 100%;
-  height: 200px;
+  height: 100px;
   position: relative;
   overflow-y: hidden;
-  background: url("../images/image5.jpg") no-repeat;
-  background-size: cover; }
+  //background: url('../images/image5.jpg') no-repeat;
+  //background-size: cover;
+  background-color: #d9534f;
   @media screen and (min-width: 415px) {
-    .content-banner {
-      background-position: right;
-      background-size: contain; }
-      .content-banner .cover {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4); } }
+    .cover{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.4);
+    }
+    background-position: right;
+    background-size: contain;
+  }
+}
 
+.content-banner-image {
+  display: block;
+  height: auto;
+  top: 0;
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+}
+*/
 .content-banner-title {
   margin: 0;
   color: #000;
@@ -930,14 +959,6 @@ main.content {
   left: 15px;
   bottom: 15px;
   z-index: 1; }
-
-.content-banner-image {
-  display: block;
-  height: auto;
-  top: 0;
-  max-width: 100%;
-  position: relative;
-  z-index: -1; }
 
 .content-list .list-item {
   border-bottom: 1px solid #c4cccf;
@@ -963,11 +984,12 @@ main.content {
   color: #232d38;
   display: flex;
   align-items: center;
-  padding: 25px 0;
+  padding: 10px 0;
   text-decoration: none; }
   .content-list .list-item-event img, .content-list .list-item-event .title, .content-list .list-item-event .pichi-button {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    width: 50px; }
   .content-list .list-item-event .title {
     width: 42%;
     margin-left: 10px; }

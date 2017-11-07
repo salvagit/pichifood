@@ -9,7 +9,7 @@
     .content-show {
       padding: 0 10%;
       .content-list {
-        width: 60%;
+        width: 100%;
       }
       .checkout-container {
         width: 35%;
@@ -20,8 +20,8 @@
           display: block;
           max-width: 400px;
 
-          padding: 20px;
-          margin: 20px auto;
+          padding: 0 20px;
+          margin: 0 auto;
 
           border-radius: 5px;
         }
