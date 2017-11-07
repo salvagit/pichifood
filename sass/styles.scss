@@ -50,7 +50,7 @@
   // float: right;
   margin-left: auto;
   background-color: transparent;
-  border: 0.3px solid $soft-blue;
+  border: .5px solid $soft-blue;
   border-radius: 5px;
   text-transform: uppercase;
   color: $soft-blue;
@@ -237,6 +237,9 @@ main.content {
     .products-list{
       width: 60%;
       display: inline-block;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
     }
   }
 }

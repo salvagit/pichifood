@@ -700,7 +700,9 @@ footer {
       padding-left: 0; }
       #foodItemsFilter .filters-container div .filter-button button, #foodItemsFilter .filters-container div .filter-button ul {
         border-color: #6b9ac0;
-        color: #6b9ac0; }
+        color: #6b9ac0;
+        max-height: 60vh;
+        overflow: scroll; }
       #foodItemsFilter .filters-container div .filter-button ul > li {
         color: #6b9ac0; }
         #foodItemsFilter .filters-container div .filter-button ul > li a {
@@ -747,6 +749,9 @@ footer {
         font-size: 20px;
         color: #cccccc; }
 
+@media screen and (max-width: 900px) {
+  main.checkout-mobile .content-show #foodItemsFilter {
+    display: none; } }
 /**
  * Media Queries.
  */
@@ -795,7 +800,7 @@ footer {
   height: 50px;
   margin-left: auto;
   background-color: transparent;
-  border: 0.3px solid #6b9ac0;
+  border: 0.5px solid #6b9ac0;
   border-radius: 5px;
   text-transform: uppercase;
   color: #6b9ac0; }
@@ -920,6 +925,9 @@ main.content {
   main.content .content-show .products-list {
     width: 60%;
     display: inline-block; }
+    @media screen and (max-width: 900px) {
+      main.content .content-show .products-list {
+        width: 100%; } }
 
 /*
 .content-banner {
