@@ -701,8 +701,9 @@ footer {
       #foodItemsFilter .filters-container div .filter-button button, #foodItemsFilter .filters-container div .filter-button ul {
         border-color: #6b9ac0;
         color: #6b9ac0;
-        max-height: 60vh;
-        overflow: scroll; }
+        max-height: 60vh; }
+      #foodItemsFilter .filters-container div .filter-button ul {
+        overflow-y: scroll; }
       #foodItemsFilter .filters-container div .filter-button ul > li {
         color: #6b9ac0; }
         #foodItemsFilter .filters-container div .filter-button ul > li a {

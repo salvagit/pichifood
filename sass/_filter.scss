@@ -14,7 +14,9 @@
           border-color: $soft-blue;
           color: $soft-blue;
           max-height: 60vh;
-          overflow: scroll;
+        }
+        ul {
+          overflow-y: scroll;
         }
         ul > li {
           color:$soft-blue;
