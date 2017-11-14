@@ -475,10 +475,15 @@ var Main = {
   updateTotalPrice: function () {
     var obj = this.getLocalStorageObject(),
         total = 0;
-    obj.forEach(function(el){total += el.price * el.quantity;});
+    obj.forEach( function(el) { total += el.price * el.quantity; } );
     document.querySelectorAll('.total-cart').forEach(function(el){
-      el.innerHTML = '$' + total;
+      el.innerHTML = '$' + total.toFixed(2);
     });
+    var cartItems = obj.reduce(function (a,b) {
+      return a + parseInt(b['quantity']);
+    }, 0);
+    document.getElementById('CountCartItems').innerHTML = cartItems + ' items';
+
   },
 
   updateCounts: function (scope) {
