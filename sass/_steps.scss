@@ -1,18 +1,28 @@
 section.steps {
   clear: both;
   padding: 100px 0;
-  .row{margin: 0;}
+  text-align: center;
+  .row{
+    margin: 0;
+    &.container-fluid {
+      @media screen and (min-width: 900px) {
+        display: flex;
+      }
+    }
+  }
   .step-item {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
     text-align: center;
-      svg {
-        width: 100%;
-        max-width: 200px;
+    svg {
+      min-width: 200px;
         margin: 0;
 
         border: 10px solid black;
         border-radius: 50%;
 
-        padding: 10%;
+        padding: 10px;
       }
       h4 {
         font-family: 'Mogra', cursive;

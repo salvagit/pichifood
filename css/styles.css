@@ -150,18 +150,24 @@ table {
 
 section.steps {
   clear: both;
-  padding: 100px 0; }
+  padding: 100px 0;
+  text-align: center; }
   section.steps .row {
     margin: 0; }
+    @media screen and (min-width: 900px) {
+      section.steps .row.container-fluid {
+        display: flex; } }
   section.steps .step-item {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
     text-align: center; }
     section.steps .step-item svg {
-      width: 100%;
-      max-width: 200px;
+      min-width: 200px;
       margin: 0;
       border: 10px solid black;
       border-radius: 50%;
-      padding: 10%; }
+      padding: 10px; }
     section.steps .step-item h4 {
       font-family: 'Mogra', cursive; }
 
