@@ -714,7 +714,7 @@ footer {
     color: #6b9ac0;
     margin: 0;
     text-align: right;
-    padding-right: 20px; }
+    padding-right: 5px; }
     #foodItemsFilter .filters-container .order button {
       border-color: #6b9ac0;
       width: 40px;
@@ -759,12 +759,6 @@ aside.checkout-container {
     aside.checkout-container {
       display: flex;
       justify-content: center; } }
-
-section.content-show {
-  display: flex; }
-  @media screen and (max-width: 900px) {
-    section.content-show {
-      display: block; } }
 
 #pichicart {
   margin-top: 15px;
@@ -965,12 +959,19 @@ main.content {
           text-align: center; }
           main.content header.content-show .header-container #searchForm .form-group .input-group .addrHome {
             height: 70px; }
-  main.content .content-show .products-list {
-    width: 60%;
-    display: inline-block; }
+  main.content .content-show {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; }
+    main.content .content-show .products-list {
+      width: 60%;
+      display: inline-block; }
+      @media screen and (max-width: 900px) {
+        main.content .content-show .products-list {
+          width: 100%; } }
     @media screen and (max-width: 900px) {
-      main.content .content-show .products-list {
-        width: 100%; } }
+      main.content .content-show {
+        display: block; } }
 
 .content-banner-title {
   margin: 0;

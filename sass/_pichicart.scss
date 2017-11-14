@@ -6,13 +6,6 @@ aside.checkout-container {
     }
 }
 
-section.content-show {
-    display: flex;
-    @media screen and (max-width:900px) {
-        display: block;
-    }
-}
-
 #pichicart {
     margin-top: 15px;
     display: none;

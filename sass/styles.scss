@@ -132,9 +132,7 @@ main.content {
           }
         }
       }
-      section {
-        // min-height: calc(100vh - 285px);
-      }
+      
       #searchForm {
         .form-group {
           margin: 0;
@@ -169,7 +167,10 @@ main.content {
 
   }
 
-  .content-show{
+  .content-show {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
     .products-list{
       width: 60%;
       display: inline-block;
@@ -177,7 +178,11 @@ main.content {
         width: 100%;
       }
     }
+    @media screen and (max-width: 900px) {
+      display: block;
+    }
   }
+
 }
 
 .content-banner-title {
