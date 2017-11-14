@@ -9,32 +9,23 @@ aside.checkout-container {
 #pichicart {
     margin-top: 15px;
     display: none;
-    // background-color: $soft-gray;
     .title-cart-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         h3, span.badge, svg, small, p.total-cart {
             margin: 0;
-            // flex-grow: .1;
         }
-        h3 {
-            // flex-grow: .4;
-        }
+        h3 {}
         span.badge {
-            // flex-grow: .1;
             background-color: blue;
             text-align: center
         }
         svg {
             display: none;
-            // flex-grow: .1;
         }
-        small {
-            // flex-grow: .2;
-        }
+        small {}
         p.total-cart {
-            // flex-grow: .3;
             display: inline-block;
             font-weight: bolder;
             font-size: 1.5em;

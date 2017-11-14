@@ -893,7 +893,7 @@ main.content {
     font-family: MuseoSans500, Verdana, Geneva, sans-serif;
     color: #343e44; }
   main.content header.content-show {
-    width: 60%;
+    width: 100%;
     display: inline-block;
     height: calc(100vh - 42px);
     background: url("../images/image5.jpg") no-repeat center;
@@ -960,7 +960,6 @@ main.content {
           main.content header.content-show .header-container #searchForm .form-group .input-group .addrHome {
             height: 70px; }
   main.content .content-show {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex; }
     main.content .content-show .products-list {

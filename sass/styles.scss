@@ -73,7 +73,7 @@ main.content {
     }
   }
   header.content-show {
-    width: 60%;
+    width: 100%;
     display: inline-block;
     height: calc(100vh - 42px);
 
@@ -168,7 +168,6 @@ main.content {
   }
 
   .content-show {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     .products-list{
