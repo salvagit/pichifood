@@ -79,8 +79,22 @@ Main.globals = {
         console.log(status, data);
       }
     });
+  },
+  share: function (title) {
+    const url = window.location.href;
+    if (navigator.share) {
+      navigator.share({
+        title: title,
+        url: url,
+      })
+        .then(() => console.log('Successful share'))
+        .catch((error) => console.log('Error sharing', error));
+    } else {
+      window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(title) + "&url=" + encodeURIComponent(url), '_blank');
+    }
   }
 };
+
 
 (function () {
   'use strict';

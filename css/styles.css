@@ -689,8 +689,6 @@ footer {
     font-size: 14px;
     line-height: normal;
     margin-bottom: 25px; }
-  footer .footer__social-icons a:nth-child(2) {
-    margin: 0 30px; }
   @media screen and (max-width: 900px) {
     footer {
       padding-bottom: 60px; } }
