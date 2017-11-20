@@ -28,6 +28,15 @@ footer {
     a:nth-child(2) {
       // margin: 0 30px;
     }
+    .social {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 30%;
+      @media screen and (max-width:900px) {
+        width: 100%;
+      }
+    }
   }
 
   @media screen and (max-width: 900px) {

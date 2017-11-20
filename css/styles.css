@@ -689,6 +689,14 @@ footer {
     font-size: 14px;
     line-height: normal;
     margin-bottom: 25px; }
+  footer .footer__social-icons .social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%; }
+    @media screen and (max-width: 900px) {
+      footer .footer__social-icons .social {
+        width: 100%; } }
   @media screen and (max-width: 900px) {
     footer {
       padding-bottom: 60px; } }
